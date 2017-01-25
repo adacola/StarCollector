@@ -1,0 +1,10 @@
+{
+    "blackList": [
+        { "regex": "hoge" },
+        { "string": "hoge" }
+    ],
+    "whiteList": [
+        { "regex": "hoge" },
+        { "string": "hoge" }
+    ]
+}

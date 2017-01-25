@@ -1,0 +1,8 @@
+source https://nuget.org/api/v2
+
+nuget FSharp.Core 4.0.0.1 redirects:force
+nuget FSharp.Data
+nuget CoreTweet
+nuget CoreTweet.Streaming.Reactive
+nuget Argu
+nuget System.Reactive

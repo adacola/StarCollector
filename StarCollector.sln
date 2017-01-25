@@ -3,6 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{525E35A5-F9A2-42B6-A59E-50C9FAA3EC02}"
+	ProjectSection(SolutionItems) = preProject
+		paket.dependencies = paket.dependencies
+	EndProjectSection
+EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "StarCollector", "StarCollector\StarCollector.fsproj", "{69F10B43-D075-4BB0-BEBB-E302E1160B9B}"
 EndProject
 Global
