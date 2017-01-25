@@ -35,7 +35,7 @@ let getText (message : StatusMessage) =
 let getExpandedText (message : StatusMessage) =
     let urls = getUrls message
     let text = getText message
-    (text, urls |> List.rev) ||> List.fold (fun text url ->
+    (text, urls |> List.sortBy (fun x -> -x.Indices.[0])) ||> List.fold (fun text url ->
         let [|includeStart; excludeEnd|] = url.Indices
         let pre = if includeStart = 0 then "" else text.[.. includeStart - 1]
         let post = if text.Length < excludeEnd then "" else text.[excludeEnd ..]
